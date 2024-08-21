@@ -1,0 +1,351 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  background-color: #333;
+  z-index: 1;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  transition: 0.3s;
+}
+
+.topnav a:hover {
+  background-color: #111;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.topnav a.active {
+  background-color: yellowgreen;
+  color: white;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.topnav-centered1 a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-148%, -50%);
+}
+
+.topnav-centered2 a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(50%, -50%);
+}
+
+.topnav-centered3 a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.topnav-right {
+  float: right;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("images/IMG_0177.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div.parallaxText {
+  height: 500px;
+  background-color: black;
+  color: white;
+  font-size: 24px;
+}
+.gecpara {/* Parallax code from https://www.w3schools.com/howto/howto_css_parallax.asp */
+  background-image: url("images/leopard_gecko.jpg");
+  min-height: 400px;/*this sets the height of the image*/
+  opacity: 0.65;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.gecpara2,
+.gecpara3 {
+  min-height: 400px;/*this sets the height for the bottom two images*/
+  opacity: 0.65;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.gecpara2 {
+  background-image: url("images/gecko1.jpg");
+  transition: 0.5s;
+}/* these are the bottom 2 images of the webpage*/
+.gecpara3 {
+  background-image: url("images/gecko2.jpg");
+  transition: 0.5s;
+}
+.gectext {/*this is the text color and size*/
+  background-color: white;
+  font-size: 20px;
+  padding: 20px;
+}
+.gectcolor {
+  color: black;
+}
+.gecpara:hover,
+.gecpara2:hover,
+.gecpara3:hover {/*this is where the image gets bigger when hovered over*/
+  min-height: 800px;
+  transition: 0.5s;
+}
+
+/* Parallax code from https://www.w3schools.com/howto/howto_css_parallax.asp */
+.williamimg-1,
+.williamimg-2,
+.williamimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.williamimg-1 {
+  background-image: url("images/January.jpg");
+  min-height: 400px;
+  transition: min-height 0.5s;
+}
+
+.williamimg-1:hover {
+  min-height: 800px;
+}
+
+.williamimg-2 {
+  background-image: url("images/May.jpg");
+  min-height: 400px;
+  transition: min-height 0.5s;
+}
+
+.williamimg-2:hover {
+  min-height: 800px;
+}
+
+.williamimg-3 {
+  background-image: url("images/mollyDERP.jpg");
+  min-height: 400px;
+  transition: min-height 0.5s;
+}
+
+.williamimg-3:hover {
+  min-height: 1000px;
+}
+
+.michaelimg-1,
+.michaelimg-2,
+.michaelimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.michaelimg-1 {
+  background-image: url("images/tyson1.JPG");
+  min-height: 400px;
+}
+.michaelimg-1:hover {
+  min-height: 800px;
+}
+
+.michaelimg-2 {
+  background-image: url("images/tyson2.jpg");
+  min-height: 400px;
+  min-height: 400px;
+  transition: min-height 0.5s;
+}
+.michaelimg-2:hover {
+  min-height: 800px;
+}
+.michaelimg-3 {
+  background-image: url("images/tyson3.jpg");
+  min-height: 400px;
+  min-height: 400px;
+  transition: min-height 0.5s;
+}
+.michaelimg-3:hover {
+  min-height: 800px;
+}
+
+a.backToTopButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
+  background-color: rgb(100, 100, 100);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 100px;
+}
+.scrollableBody {
+  overflow-y: scroll;
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+td.empty {
+  width: 200px;
+}
+.homepageButton {
+  width: 200px;
+  z-index: 5;
+}
+
+@keyframes fadeImg {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.non-fadeableImg {
+  position: absolute;
+  width: 200px;
+}
+
+div.table {
+  margin: 0 auto; /* Added this line to center the table horizontally */
+  text-align: center; /* This ensures inline or inline-block elements inside are centered */
+}
+
+.homeTitle {
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+  color: white;
+  background-color: rgb(100, 100, 100);
+}
+
+.homeSubtitle {
+  text-align: center;
+  font-size: 30px;
+}
+
+.projectDescription {
+  max-width: 600px;
+}
+
+.homePageContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hoverOverPicsFootnote {
+  text-align: center;
+}
+
+.fadeableImg {
+  position: relative;
+  width: 200px;
+}
+.fadeableImg:hover {
+  animation-name: fadeImg;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: alternate-reverse;
+  /* dont reset the animation until the mouse is no longer hovering */
+  animation-fill-mode: forwards;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.mollyp1 {
+  text-align: left;
+  font-size: 20px;
+  padding: 20px;
+}
+.tysonp1 {
+  text-align: left;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+}
+
+.bottomnav {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  background-color: #333;
+  z-index: 1;
+}
+
+.bottomnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  transition: 0.3s;
+}
+
+.bottomnav a:hover {
+  background-color: #111;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.foot {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #212529;
+  color: white;
+  text-align: center;
+}
